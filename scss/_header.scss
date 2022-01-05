@@ -1,0 +1,68 @@
+@use 'variables' as *;
+
+.header
+{
+    position: fixed;
+    inset: 0 0 auto;
+    z-index: 999;
+    background: $white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 9%;
+
+    &.active
+    {
+        box-shadow: $box-shadow;
+        padding: 2rem 9%;
+    }
+
+    &__logo 
+    {
+        font-size: 2.5rem;
+        color: $black;
+        font-weight: bolder;
+
+        span
+        {
+            color: $yellow;
+        }
+    }
+
+    &__navbar a
+    {
+        font-size: 1.7rem;
+        margin: 0 1rem;
+        color: $black;
+        text-transform: capitalize;
+
+        &:hover 
+        {
+            color: $yellow;
+        }
+    }
+
+    .btn 
+    {
+        margin-top: 0;
+    }
+
+    &__login-btn i
+    {
+        font-size: 2.5rem;
+        color: $light-color;
+        cursor: pointer;
+        display: none;
+    }
+
+    &__menu-btn
+    {
+        font-size: 2.5rem;
+        background: transparent;
+        color: $light-color;
+        display: none;
+        cursor: pointer;
+    }
+
+
+}

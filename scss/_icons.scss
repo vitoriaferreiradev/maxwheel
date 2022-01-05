@@ -1,0 +1,62 @@
+@use 'variables' as *;
+
+.icons 
+{
+    margin: 5rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+    background: #eee;
+
+    &__wrap
+    {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 2rem;
+        background: $white;
+        border-radius: .5rem;
+
+        i 
+        {
+            height: 5.5rem;
+            width: 5.5rem;
+            line-height: 5.5rem;
+            font-size: 2.5rem;
+            text-align: center;
+            border-radius: 50%;
+            background: #eee;
+        }
+
+        h3
+        {
+           color: $yellow;
+           font-size: 2.5rem; 
+        }
+
+        p
+        {
+           color: $light-color;
+           font-size: 1.5rem; 
+        }
+
+        &:hover 
+        {
+            background: $black;
+        }
+
+        &:hover i
+        {
+            background: $yellow;
+        }
+
+        &:hover h3,
+        &:hover p
+        {
+            color: $white;
+        }
+
+
+    }
+
+}

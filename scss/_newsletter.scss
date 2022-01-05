@@ -1,0 +1,58 @@
+@use 'variables' as *;
+
+.newsletter 
+{
+    padding: 6rem 2rem;
+    text-align: center;
+    background-image: url(../image/letter-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__title 
+    {
+        color: $black;
+        font-size: 3rem;
+    }
+
+    &__desc 
+    {
+        color: $light-color;
+        font-size: 1.5rem;
+        padding: 1rem 0;
+    }
+
+    &__form 
+    {
+        margin: 1rem auto;
+        max-width: 60rem;
+        height: 5rem;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: $box-shadow;
+        border-radius: .5rem;
+        overflow: hidden;
+
+        input[type=email] {
+            height: 100%;
+            width: 100%;
+            font-size: 1.6rem;
+            padding-left: 1rem;
+            color: $black;
+        }
+
+        input[type=submit] {
+            height: 100%;
+            font-size: 1.7rem;
+            background: $black;
+            padding: 0 1rem;
+            color: $white;
+            cursor: pointer;
+
+            &:hover 
+            {
+                letter-spacing: .2rem;
+            }
+        }
+    }
+}

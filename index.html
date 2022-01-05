@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- SwiperJS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!-- Title -->
+    <title>MaxWheel</title>
+</head>
+<body>
+    <header class="header">
+        <button class="header__menu-btn" id="menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <a href="#" class="header__logo"><span>Max</span>Wheels</a>
+        <nav class="header__navbar" id="navbar">
+            <a href="#home">home</a>
+            <a href="#veiculos">veiculos</a>
+            <a href="#servicos">servicos</a>
+            <a href="#destaques">destaques</a>
+            <a href="#reviews">reviews</a>
+            <a href="#contato">contato</a>
+        </nav>
+        <div class="header__login-btn">
+            <button class="btn">Login</button>
+            <i class="far fa-user" id="login-btn"></i>
+        </div>
+    </header>
+
+    <div class="login-form">
+        <span class="fas fa-times" id="close-btn"></span>
+
+        <form action="">
+            <h3>Login</h3>
+            <input type="email" placeholder="Email" class="login-form__field">
+            <input type="password" placeholder="Senha" class="login-form__field">
+            <p>Esqueceu sua senha? <a href="#">Clique aqui!</a></p>
+            <button class="btn">Entrar</button>
+            <p>Ou acesse com</p>
+            <div class="buttons">
+                <button class="btn">Google</button>
+                <button class="btn">Facebook</button>
+            </div>
+            <p>Não tem uma conta? <a href="#">Registre-se</a></p>
+        </form>
+    </div>
+    <!-- Home -->
+    <section class="home" id="home">
+        <h1 class="home__title">Encontre seu carro</h1>
+        <img class="home__img" src="image/home-img.png" alt="">
+        <button class="btn">Ver mais</button>
+    </section>
+    <!-- Icons -->
+    <section class="icons">
+        <div class="icons__wrap">
+            <i class="fas fa-home"></i>
+            <div class="icons__content">
+                <h3>150+</h3>
+                <p>Marcas</p>
+            </div>
+        </div>
+        <div class="icons__wrap">
+            <i class="fas fa-money-bill-wave"></i>
+            <div class="icons__content">
+                <h3>4770+</h3>
+                <p>Carros vendidos</p>
+            </div>
+        </div>
+        <div class="icons__wrap">
+            <i class="fas fa-users"></i>
+            <div class="icons__content">
+                <h3>590+</h3>
+                <p>Clientes satisfeitos</p>
+            </div>
+        </div>
+        <div class="icons__wrap">
+            <i class="fas fa-car"></i>
+            <div class="icons__content">
+                <h3>180+</h3>
+                <p>Veiculos novos</p>
+            </div>
+        </div>
+    </section>
+    <!-- Veiculos -->
+    <section class="veiculos" id="veiculos">
+        <h2 class="heading">Veículos <span>Populares</span></h2>
+        <div class="veiculos__slider swiper">
+            <div class="box-container swiper-wrapper">
+                <div class="box swiper-slide">
+                    <img class="destaque__img" src="image/vehicle-1.png" alt="">
+                    <div class="veiculos__content">
+                        <h3>Modelo Novo</h3>
+                        <div class="veiculos__preco"><span>Preço: </span> R$650.000,00</div>
+                        <ul>
+                            <li><i class="fas fa-circle"></i> 2021</li>
+                            <li><i class="fas fa-circle"></i> Automático</li>
+                            <li><i class="fas fa-circle"></i> Gasolina</li>
+                            <li><i class="fas fa-circle"></i> 183mph</li>
+                        </ul>
+                        <button class="btn">Selecionar</button>
+                    </div>
+                </div>
+                <div class="box swiper-slide">
+                    <img class="destaque__img" src="image/vehicle-2.png" alt="">
+                    <div class="veiculos__content">
+                        <h3>Modelo Novo</h3>
+                        <div class="veiculos__preco"><span>Preço: </span> R$650.000,00</div>
+                        <ul>
+                            <li><i class="fas fa-circle"></i> 2021</li>
+                            <li><i class="fas fa-circle"></i> Automático</li>
+                            <li><i class="fas fa-circle"></i> Gasolina</li>
+                            <li><i class="fas fa-circle"></i> 183mph</li>
+                        </ul>
+                        <button class="btn">Selecionar</button>
+                    </div>
+                </div>
+                <div class="box swiper-slide">
+                    <img class="destaque__img" src="image/vehicle-3.png" alt="">
+                    <div class="veiculos__content">
+                        <h3>Modelo Novo</h3>
+                        <div class="veiculos__preco"><span>Preço: </span> R$650.000,00</div>
+                        <ul>
+                            <li><i class="fas fa-circle"></i> 2021</li>
+                            <li><i class="fas fa-circle"></i> Automático</li>
+                            <li><i class="fas fa-circle"></i> Gasolina</li>
+                            <li><i class="fas fa-circle"></i> 183mph</li>
+                        </ul>
+                        <button class="btn">Selecionar</button>
+                    </div>
+                </div>
+                <div class="box swiper-slide">
+                    <img class="destaque__img" src="image/vehicle-4.png" alt="">
+                    <div class="veiculos__content">
+                        <h3>Modelo Novo</h3>
+                        <div class="veiculos__preco"><span>Preço: </span> R$650.000,00</div>
+                        <ul>
+                            <li><i class="fas fa-circle"></i> 2021</li>
+                            <li><i class="fas fa-circle"></i> Automático</li>
+                            <li><i class="fas fa-circle"></i> Gasolina</li>
+                            <li><i class="fas fa-circle"></i> 183mph</li>
+                        </ul>
+                        <button class="btn">Selecionar</button>
+                    </div>
+                </div>
+                <div class="box swiper-slide">
+                    <img class="destaque__img" src="image/vehicle-5.png" alt="">
+                    <div class="veiculos__content">
+                        <h3>Modelo Novo</h3>
+                        <div class="veiculos__preco"><span>Preço: </span> R$650.000,00</div>
+                        <ul>
+                            <li><i class="fas fa-circle"></i> 2021</li>
+                            <li><i class="fas fa-circle"></i> Automático</li>
+                            <li><i class="fas fa-circle"></i> Gasolina</li>
+                            <li><i class="fas fa-circle"></i> 183mph</li>
+                        </ul>
+                        <button class="btn">Selecionar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- Serviços -->
+    <section class="servicos" id="servicos">
+        <h2 class="heading">Nossos <span>Serviços</span></h2>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-car"></i>
+                <h3 class="servicos__title">Venda de carro</h3>
+                <p class="servicos__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, nulla?</p>
+                <button class="btn">Ver mais</button>
+            </div>
+            <div class="box">
+                <i class="fas fa-tools"></i>
+                <h3 class="servicos__title">Reparo</h3>
+                <p class="servicos__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, nulla?</p>
+                <button class="btn">Ver mais</button>
+            </div>
+            <div class="box">
+                <i class="fas fa-car-crash"></i>
+                <h3 class="servicos__title">Seguro</h3>
+                <p class="servicos__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, nulla?</p>
+                <button class="btn">Ver mais</button>
+            </div>
+            <div class="box">
+                <i class="fas fa-car-battery"></i>
+                <h3 class="servicos__title">Troca de peça</h3>
+                <p class="servicos__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, nulla?</p>
+                <button class="btn">Ver mais</button>
+            </div>
+            <div class="box">
+                <i class="fas fa-gas-pump"></i>
+                <h3 class="servicos__title">Troca de oleo</h3>
+                <p class="servicos__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, nulla?</p>
+                <button class="btn">Ver mais</button>
+            </div>
+            <div class="box">
+                <i class="fas fa-headset"></i>
+                <h3 class="servicos__title">Suporte 24h</h3>
+                <p class="servicos__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, nulla?</p>
+                <button class="btn">Ver mais</button>
+            </div>
+        </div>
+    </section>
+    <!-- Destaque -->
+    <section class="destaque" id="destaque">
+        <h2 class="heading">Carros <span>Destaque</span></h2>
+        <div class="box-container">
+            <div class="box">
+                <img class="destaque__img" src="image/car-1.png" alt="">
+                <h3 class="destaque__title">Novo modelo</h3>
+                <div class="destaque__stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="destaque__price">R$120.000,00</div>
+                <button class="btn">Selecionar</button>
+            </div>
+            <div class="box">
+                <img class="destaque__img" src="image/car-2.png" alt="">
+                <h3 class="destaque__title">Novo modelo</h3>
+                <div class="destaque__stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="destaque__price">R$120.000,00</div>
+                <button class="btn">Selecionar</button>
+            </div>
+            <div class="box">
+                <img class="destaque__img" src="image/car-3.png" alt="">
+                <h3 class="destaque__title">Novo modelo</h3>
+                <div class="destaque__stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="destaque__price">R$120.000,00</div>
+                <button class="btn">Selecionar</button>
+            </div>
+            <div class="box">
+                <img class="destaque__img" src="image/car-4.png" alt="">
+                <h3 class="destaque__title">Novo modelo</h3>
+                <div class="destaque__stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="destaque__price">R$120.000,00</div>
+                <button class="btn">Selecionar</button>
+            </div>
+            <div class="box">
+                <img class="destaque__img" src="image/car-5.png" alt="">
+                <h3 class="destaque__title">Novo modelo</h3>
+                <div class="destaque__stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="destaque__price">R$120.000,00</div>
+                <button class="btn">Selecionar</button>
+            </div>
+            <div class="box">
+                <img class="destaque__img" src="image/car-6.png" alt="" style="margin-bottom: 3.1rem;">
+                <h3 class="destaque__title">Novo modelo</h3>
+                <div class="destaque__stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="destaque__price">R$120.000,00</div>
+                <button class="btn">Selecionar</button>
+            </div>
+            <div class="box">
+                <img class="destaque__img" src="image/car-7.png" alt="">
+                <h3 class="destaque__title">Novo modelo</h3>
+                <div class="destaque__stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="destaque__price">R$120.000,00</div>
+                <button class="btn">Selecionar</button>
+            </div>
+            <div class="box">
+                <img class="destaque__img" src="image/car-8.png" alt="">
+                <h3 class="destaque__title">Novo modelo</h3>
+                <div class="destaque__stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="destaque__price">R$120.000,00</div>
+                <button class="btn">Selecionar</button>
+            </div>
+        </div>
+    </section>
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <h3 class="newsletter__title">Inscreva-se para receber novidades</h3>
+        <p class="newsletter__desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, saepe. Mollitia, ipsum sapiente!</p>
+        <form action="" class="newsletter__form">
+            <input type="email" name="" id="" placeholder="Digite seu email..." required>
+            <input type="submit" value="Cadastre-se">
+        </form>
+    </section>
+    <!-- reviews -->
+    <section class="reviews" id="reviews">
+        <h2 class="heading"><span>Reviews</span></h2>
+        <div class="swiper reviews__slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img class="reviews__img" src="image/pic-1.png" alt="">
+                    <div class="reviews__content">
+                        <p class="reviews__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod velit repellendus id officiis. Atque tempore mollitia amet, ex iusto enim.</p>
+                        <h3 class="reviews__title">Jonh Doe</h3>
+                        <div class="reviews__stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img class="reviews__img" src="image/pic-2.png" alt="">
+                    <div class="reviews__content">
+                        <p class="reviews__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod velit repellendus id officiis. Atque tempore mollitia amet, ex iusto enim.</p>
+                        <h3 class="reviews__title">Jonh Doe</h3>
+                        <div class="reviews__stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img class="reviews__img" src="image/pic-3.png" alt="">
+                    <div class="reviews__content">
+                        <p class="reviews__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod velit repellendus id officiis. Atque tempore mollitia amet, ex iusto enim.</p>
+                        <h3 class="reviews__title">Jonh Doe</h3>
+                        <div class="reviews__stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img class="reviews__img" src="image/pic-4.png" alt="">
+                    <div class="reviews__content">
+                        <p class="reviews__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod velit repellendus id officiis. Atque tempore mollitia amet, ex iusto enim.</p>
+                        <h3 class="reviews__title">Jonh Doe</h3>
+                        <div class="reviews__stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img class="reviews__img" src="image/pic-5.png" alt="">
+                    <div class="reviews__content">
+                        <p class="reviews__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod velit repellendus id officiis. Atque tempore mollitia amet, ex iusto enim.</p>
+                        <h3 class="reviews__title">Jonh Doe</h3>
+                        <div class="reviews__stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img class="reviews__img" src="image/pic-6.png" alt="">
+                    <div class="reviews__content">
+                        <p class="reviews__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod velit repellendus id officiis. Atque tempore mollitia amet, ex iusto enim.</p>
+                        <h3 class="reviews__title">Jonh Doe</h3>
+                        <div class="reviews__stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- Contato -->
+    <section class="contato" id="contato">
+        <h2 class="heading"><span>Contato</span></h2>
+        <div class="contato__row">
+            <iframe class="contato__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14887.012260678177!2d-48.034811315749074!3d-21.12240877626253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b99f5434e3fe75%3A0xfab50c11d1aac8b2!2sUm%20lugar%20qualquer!5e0!3m2!1spt-BR!2sbr!4v1641403059529!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
+
+            <form action="" class="contato__form">
+                <h3 class="contato__title">Contate nos</h3>
+                <input class="contato__field" type="text" placeholder="Seu nome" required>
+                <input class="contato__field" type="email" placeholder="Seu email" required>
+                <input class="contato__field" type="number" placeholder="Seu telefone" required>
+                <textarea class="contato__field" name="" placeholder="Mensagem..."></textarea>
+                <input type="submit" value="Enviar" class="btn">
+            </form>
+        </div>
+    </section>
+    <!-- Footer -->
+    <section class="footer">
+        <div class="box-container">
+
+            <div class="box">
+                <h3 class="footer__title">Filiais</h3>
+                <a class="footer__link" href="#"><i class="fas fa-map-marker-alt"></i> Belo Horizonte - MG</a>
+                <a class="footer__link" href="#"><i class="fas fa-map-marker-alt"></i> São Paulo - SP</a>
+                <a class="footer__link" href="#"><i class="fas fa-map-marker-alt"></i> Rio Grande do Sul - RS</a>
+            </div>
+
+            <div class="box">
+                <h3 class="footer__title">Links Rápidos</h3>
+                <nav class="footer__navbar">
+                    <a class="footer__link" href="#home"> <i class="fas fa-chevron-right"></i> home</a>
+                    <a class="footer__link" href="#veiculos"> <i class="fas fa-chevron-right"></i> veiculos</a>
+                    <a class="footer__link" href="#servicos"> <i class="fas fa-chevron-right"></i> servicos</a>
+                    <a class="footer__link" href="#destaques"> <i class="fas fa-chevron-right"></i> destaques</a>
+                    <a class="footer__link" href="#reviews"> <i class="fas fa-chevron-right"></i> reviews</a>
+                    <a class="footer__link" href="#contato"> <i class="fas fa-chevron-right"></i> contato</a>
+                </nav>
+            </div>
+
+            <div class="box">
+                <h3 class="footer__title">Contato</h3>
+                <a class="footer__link" href=""><i class="fas fa-phone"></i> +55 31 1234-5678</a>
+                <a class="footer__link" href=""><i class="fas fa-phone"></i> +55 11 2345-6789</a>
+                <a class="footer__link" href=""><i class="fas fa-phone"></i> +55 51 3456-7890</a>
+                <a class="footer__link" href=""><i class="fas fa-envelope"></i> contato@email.com</a>
+            </div>
+
+            <div class="box">
+                <h3 class="footer__title">Siga-nos</h3>
+                <a class="footer__link" href=""><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a class="footer__link" href=""><i class="fab fa-instagram"></i> Instagram</a>
+                <a class="footer__link" href=""><i class="fab fa-twitter"></i> Twitter</a>
+                <a class="footer__link" href=""><i class="fab fa-linkedin"></i> Linkedin</a>
+            </div>
+
+        </div>
+    </section>
+    <!-- Scripts -->
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/login-form.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="scripts/slide.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+@use 'variables' as *;
+
+.contato 
+{
+    &__row
+    {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    &__map,
+    &__form 
+    {
+        flex: 1 1 42rem;
+        padding: 2rem;
+        border: $border;
+        border-radius: .5rem;
+        box-shadow: $box-shadow;
+    }
+
+    &__map 
+    {
+        width: 100%;
+    }
+
+    &__title 
+    {
+        font-size: 3rem;
+        text-align: center;
+        color: $black;
+    }
+
+    &__field
+    {
+        margin: .7rem 0;
+        width: 100%;
+        border: $border;
+        padding: 1rem;
+        font-size: 1.6rem;
+        color: $black;
+        border-radius: .5rem;
+
+        &:focus 
+        {
+            border-color: $yellow;
+        }
+    }
+
+    &__form input[type=number] { 
+       -moz-appearance: textfield;
+       appearance: textfield;
+    }
+
+    &__form textarea
+    {
+        height: 15rem;
+        resize: none;
+    }
+}

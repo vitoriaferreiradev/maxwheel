@@ -1,0 +1,40 @@
+@use 'variables' as *;
+
+.footer 
+{
+    background: $light-yellow;
+    
+    .box-container 
+    {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        gap: 1.5rem;
+    }
+
+    &__title 
+    {
+        color: $black;
+        font-size: 2.2rem;
+        padding: 1rem 0;
+    }
+
+    &__link
+    {
+        display: block;
+        text-transform: capitalize;
+        color: $black;
+        padding: 1rem 0;
+
+        i 
+        {
+            margin-right: .5rem;
+        }
+
+        &:hover i 
+        {
+            margin-left: 1.5rem;
+        }
+    }
+
+
+}

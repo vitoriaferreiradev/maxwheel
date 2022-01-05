@@ -1,0 +1,107 @@
+@use 'variables' as *;
+
+.login-form
+{
+    position: fixed;
+    top: -105%;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    background: $form-bg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+
+    &.active
+    {
+        top: 0%;
+        opacity: 1;
+    }
+
+    .fas.fa-times
+    {
+        position: absolute;
+        top: 1.5rem;
+        right: 2.5rem;
+        font-size: 4rem;
+        color: $white;
+        cursor: pointer;
+    }
+
+    form 
+    {
+        padding: 2rem;
+        margin: 2rem;
+        border-radius: .5rem;
+        box-shadow: $box-shadow;
+        background: $white;
+        border: $border;
+        text-align: center;
+        width: 45rem;
+
+        .buttons 
+        {
+            display: flex;
+            align-items: center;
+            // justify-content: center;
+            gap: 1rem;
+        }
+
+        .btn 
+        {
+            display: block;
+            width: 100%;
+            margin: .5rem 0;
+        }
+
+        h3 
+        {
+            color: $black;
+            font-size: 2.5rem;
+            padding-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        p 
+        {
+            padding: 1rem 0;
+            font-size: 1.5rem;
+            color: $light-color;
+        }
+
+        a
+        {
+            color: $yellow;
+            text-decoration: underline;
+
+            &:hover
+            {
+                color: $black;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__field
+    {
+        margin: .7rem 0;
+        width: 100%;
+        text-transform: none;
+        color: $black;
+        font-size: 1.6rem;
+        padding: 1rem 1.2rem;
+        border: $border;
+        border-radius: .5rem;
+
+        &:focus
+        {
+            border: .2rem solid $yellow;
+            transition: none;
+        }
+    }
+
+
+
+}
